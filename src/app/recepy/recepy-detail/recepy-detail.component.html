@@ -1,0 +1,14 @@
+<div class="row" *ngIf="recepy">
+    <div class="col-md-12">
+        <div class="card">
+            <img class="card-img-top" style="height:300px" [src]="recepy.imgurl" [alt]="recepy.name">
+            <div class="card-body text-center" >
+                <h4>{{recepy.name}}</h4>
+                <h1>{{recepy.disc}}</h1>
+           </div>
+           <button (click)="onSend()"class="btn btn-success">add to shopping list</button>
+
+       <div>
+    <div>
+</div>
+

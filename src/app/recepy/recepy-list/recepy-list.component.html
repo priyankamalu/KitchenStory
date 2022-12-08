@@ -1,0 +1,20 @@
+<div class="row">
+    
+    <div class="col-md-12">
+        <ul class="list-group">
+            <!--<div class="list-group-item"  *ngFor= "let rec of recepy">
+                <div>
+                    <div>
+                        <h4>{{rec.name}}</h4>
+                       
+                        <p>{{rec.disc}}</p>
+                    </div>
+                    <div>
+                       <img style="height:100px;width:100px;" [src]="rec.imgurl" [alt]="rec.name">
+                    </div>
+                </div>
+            </div>-->
+            <app-recepy-item [recepy]="recepyEle" *ngFor="let recepyEle of recepys"></app-recepy-item>
+        </ul>
+    </div>
+</div>

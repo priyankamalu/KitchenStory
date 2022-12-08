@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <h1>This Is Login Page For Admin</h1>
+        <div class="col-md-4">
+            
+        </div>
+
+        <div class="col-md-4">
+            
+            <form>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text"
+                    name="username"
+                    class="form-control"
+                    id="username"
+                    ngModel
+                #username="ngModel"
+                required>
+                </div>
+                <span class="text-danger" *ngIf="!username.valid && username.touched">please enter name</span>
+                <div class="form-group">
+                    <label for="password">password</label>
+                    <input type="password"
+                    name="password"
+                    class="form-control"
+                    id="password"
+                    ngModel
+                #username="ngModel"
+                required>
+                </div>
+                <span class="text-danger" *ngIf="!username.valid && username.touched">please enter name</span>
+                 
+                <button (click)="onClick()" class="btn btn-success">Login</button>
+            </form>
+        </div>
+    </div>
+</div>

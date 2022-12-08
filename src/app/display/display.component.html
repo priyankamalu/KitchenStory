@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-6">
+        <button (click)="onClick1()"class="btn btn-success">AddRecepy</button>
+            <br>
+            <br>
+        <table class="table table-bordered">
+            <tr>
+                <th>name</th><th>Price</th>
+            </tr>
+            <tr *ngFor="let rec of recepy1">
+                <td>
+                    {{rec.rname}}
+                </td>
+                <td>
+                    {{rec.price}}
+                </td>
+               <td><a [routerLink]="['../delete',rec.id]">delete</a></td>
+                </tr>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<li class="list-group-item" (click)="onRecepySelected()"> 
+    <div style="display:flex; justfy-content:space-between;">
+      <div>
+        <h4>{{recepy.name}}</h4>
+        <p>{{recepy.disc}}</p>
+    </div>
+    <div>
+       <img style="height:100px;width:100px;" [src]="recepy.imgurl" [alt]="recepy.name">
+    </div>
+</div>
+
+
+
+</li>
